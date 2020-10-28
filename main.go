@@ -7,7 +7,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	title := "Jenkins X golang http example"
+	     title := "Jenkins X golang http example"
 
 	from := ""
 	if r.URL != nil {
@@ -24,3 +24,7 @@ func main() {
 	http.HandleFunc("/", handler)
 	http.ListenAndServe(":8080", nil)
 }
+
+  func Cheese() string {
+  return "foo"
+  }
